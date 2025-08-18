@@ -1,4 +1,4 @@
-package cafeteria;
+package p01_template_method;
 
 public abstract class Cafe {
 
@@ -15,12 +15,12 @@ public abstract class Cafe {
     }
 
     // no se negocia
-    protected boolean estaListoParaEntregar(){
+    private boolean estaListoParaEntregar(){
         return this.estaListo;
     }
 
     // no se negocia
-    protected void llenarCafe(int unaCantidad) {
+    private void llenarCafe(int unaCantidad) {
         this.cantidadCafe = unaCantidad;
     }
 
@@ -28,12 +28,12 @@ public abstract class Cafe {
     protected abstract void finalizar();
 
     // no se negocia
-    protected void entregarAlCliente() {
+    private void entregarAlCliente() {
         this.estaEntregado = true;
     }
 
     // no se negocia
-    protected void agregarSobresEndulzante() {
+    private void agregarSobresEndulzante() {
         this.tieneSobreEndulzante = true;
     }
 

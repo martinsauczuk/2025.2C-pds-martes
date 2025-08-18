@@ -1,4 +1,4 @@
-package cafeteria;
+package p01_template_method;
 
 public class CafeParaLlevar extends Cafe {
 
