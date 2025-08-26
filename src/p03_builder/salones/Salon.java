@@ -3,6 +3,7 @@ package p03_builder.salones;
 
 import p03_builder.salones.componentes.Catering;
 import p03_builder.salones.componentes.Escenario;
+import p03_builder.salones.componentes.Estacionamiento;
 import p03_builder.salones.componentes.Musicalizacion;
 import p03_builder.salones.componentes.mobiliarios.Mobiliario;
 import p03_builder.salones.componentes.sistemasDeAcceso.SistemaDeAcceso;
@@ -15,6 +16,8 @@ public class Salon {
     private final Mobiliario mobiliario;
     private final Escenario escenario;
     private final SistemaDeAcceso sistemaDeAcceso;
+    private final Estacionamiento estacionamiento;
+
 
     /*
         Unico constructor "gigante"
@@ -24,14 +27,14 @@ public class Salon {
                  Catering catering,
                  Mobiliario mobiliario,
                  Escenario escenario,
-                 SistemaDeAcceso sistemaDeAcceso) {
+                 SistemaDeAcceso sistemaDeAcceso, Estacionamiento estacionamiento) {
         this.id = id;
         this.musicalizacion = musicalizacion;
         this.catering = catering;
         this.mobiliario = mobiliario;
         this.escenario = escenario;
         this.sistemaDeAcceso = sistemaDeAcceso;
+        this.estacionamiento = estacionamiento;
     }
-
 
 }

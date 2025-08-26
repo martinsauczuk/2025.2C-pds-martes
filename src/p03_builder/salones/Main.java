@@ -4,6 +4,7 @@ package p03_builder.salones;
 import p03_builder.salones.componentes.Catering;
 import p03_builder.salones.componentes.Escenario;
 import p03_builder.salones.componentes.Musicalizacion;
+import p03_builder.salones.componentes.builder.SalonBuilder;
 import p03_builder.salones.componentes.mobiliarios.MobiliarioDeSillas;
 import p03_builder.salones.componentes.mobiliarios.MobiliarioDeVallas;
 import p03_builder.salones.componentes.mobiliarios.MobiliarioMesas;
@@ -30,34 +31,44 @@ public class Main {
          */
 
         // Configurar salon para casamiento de Seba y Mery para 80 personas
-        Salon salonCasamientoSebaYMery = new Salon(
-                "S4324",
-                new Musicalizacion(),
-                new Catering(80),
-                new MobiliarioMesas(10,8),
-                null,
-                new SistemaDeAccesoPlanilla()
-        );
+//        Salon salonCasamientoSebaYMery = new Salon(
+//                "S4324",
+//                new Musicalizacion(),
+//                new Catering(80),
+//                new MobiliarioMesas(10,8),
+//                null,
+//                new SistemaDeAccesoPlanilla()
+//        );
 
         // Configurar salon para una conferencia de Alan Kay para 200 personas
-        Salon conferenciaAlanKay200p = new Salon(
-                "S4324",
-                null,
-                null,
-                new MobiliarioDeSillas(200),
-                new Escenario(),
-                new SistemaDeIngresoPulseras()
-        );
+//        Salon conferenciaAlanKay200p = new Salon(
+//                "S4464",
+//                null,
+//                null,
+//                new MobiliarioDeSillas(200),
+//                new Escenario(),
+//                new SistemaDeIngresoPulseras()
+//        );
 
         // Configurar salon para una conferencia de Alan Kay para 200 personas
-        Salon acreditacionMaratonBA = new Salon(
-                "S356",
-                null,
-                null,
-                new MobiliarioDeVallas(),
-                null,
-                new SistemaDeAccesoQr()
-        );
+//        Salon acreditacionMaratonBA = new Salon(
+//                "S356",
+//                null,
+//                null,
+//                new MobiliarioDeVallas(),
+//                null,
+//                new SistemaDeAccesoQr()
+//        );
+
+
+
+        Salon acreditacionMaratonBAconBuilder = new SalonBuilder("S356")
+                .mobiliario(new MobiliarioDeVallas())
+                .sistemaDeAcceso(new SistemaDeAccesoQr())
+                .build();
+
+
+
 
 
     }
