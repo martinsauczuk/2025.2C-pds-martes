@@ -41,8 +41,9 @@ public class DocumentoDeTexto implements Documento{
 
     @Override
     public String toString() {
-        return "CurriculumVitae{" +
-                "cantPaginas=" + cantPaginas +
+        return "DocumentoDeTexto{" +
+                "titulo='" + titulo + '\'' +
+                ", cantPaginas=" + cantPaginas +
                 ", abrochado=" + abrochado +
                 ", impreso=" + impreso +
                 ", anillado=" + anillado +

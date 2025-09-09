@@ -1,6 +1,8 @@
 package p06_decorator.impresoras;
 
 
+import p06_decorator.impresoras.decorators.AbrochadoraDecorator;
+import p06_decorator.impresoras.decorators.AnilladoraDecorator;
 import p06_decorator.impresoras.documentos.Documento;
 import p06_decorator.impresoras.documentos.DocumentoDeTexto;
 
@@ -23,33 +25,45 @@ public class Main {
         System.out.printf("-----------------%n");
 
 
-        // Impresora + abrochadora
+        // Impresora + Abrochadora
         System.out.println(">>> Impresora + abrochadora");
-
-        //
-        //
+        ProcesadorDeDocumento impresoraAbrochadora = new AbrochadoraDecorator(impresora);
+        impresoraAbrochadora.procesar(doc02);
         System.out.println(doc02);
         System.out.printf("-----------------%n");
 
-
-
-        // Impresora + anillado
+        // Impresora + Anilladora
         System.out.println(">>> Impresora + anillado");
-
+        ProcesadorDeDocumento impresoraAnilladora = new AnilladoraDecorator(impresora);
+        impresoraAnilladora.procesar(doc03);
         System.out.println(doc03);
         System.out.printf("-----------------%n");
 
 
-        // Impresora + anillado
-        System.out.println(">>> Impresora + anillado");
-
+        // Impresora + abrochadora + anillado
+        System.out.println(">>> Impresora + abrochadora + anillado");
+        ProcesadorDeDocumento impresoraAbrochadoraAnillado = new AnilladoraDecorator(impresoraAbrochadora);
+        impresoraAbrochadoraAnillado.procesar(doc04);
         System.out.println(doc04);
         System.out.printf("-----------------%n");
 
 
+        // Impresora + abrochadora + anillado
+        System.out.println(">>> Impresora + abrochadora + anillado");
+        ProcesadorDeDocumento mamushka =
+                new AnilladoraDecorator(
+                    new AbrochadoraDecorator(
+                            new Impresora()
+                    )
+                );
+        System.out.println(mamushka);
 
 
-
+        // Impresora + abrochadora + anillado "stack"
+        System.out.println(">>> Impresora + abrochadora + anillado");
+        ProcesadorDeDocumento procesadorStack = new Impresora();
+        procesadorStack = new AbrochadoraDecorator(procesadorStack);
+        procesadorStack = new AnilladoraDecorator(procesadorStack);
 
 
 
