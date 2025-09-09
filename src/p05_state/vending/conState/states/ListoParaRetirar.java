@@ -1,6 +1,6 @@
 package p05_state.vending.conState.states;
 
-import p06_state.vending.conState.MaquinaCafeVending;
+import p05_state.vending.conState.MaquinaCafeVending;
 
 public class ListoParaRetirar implements ExpendedoraState {
 

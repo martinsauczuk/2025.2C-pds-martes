@@ -1,7 +1,8 @@
 package p05_state.vending.conState;
 
-import p06_state.vending.conState.states.EsperandoSeleccion;
-import p06_state.vending.conState.states.ExpendedoraState;
+
+import p05_state.vending.conState.states.EsperandoSeleccion;
+import p05_state.vending.conState.states.ExpendedoraState;
 
 public class MaquinaCafeVending {
 
