@@ -1,6 +1,6 @@
-package p08_observer.p08_suscriber.dolarEjemploPpt.observables;
+package p07_observer.dolarEjemploPpt.observables;
 
-import p08_observer.p08_suscriber.dolarEjemploPpt.observadores.Observador;
+import p07_observer.dolarEjemploPpt.observadores.Observador;
 
 import java.util.HashSet;
 

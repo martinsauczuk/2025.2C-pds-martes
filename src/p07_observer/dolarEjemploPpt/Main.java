@@ -1,10 +1,8 @@
-package p08_observer.p08_suscriber.dolarEjemploPpt;
+package p07_observer.dolarEjemploPpt;
 
-import p08_observer.p08_suscriber.dolarEjemploPpt.observables.Banco;
-import p08_observer.p08_suscriber.dolarEjemploPpt.observadores.ImportadorApple;
-import p08_observer.p08_suscriber.dolarEjemploPpt.observadores.ProfesorDeEconomia;
-
-import java.util.Observer;
+import p07_observer.dolarEjemploPpt.observables.Banco;
+import p07_observer.dolarEjemploPpt.observadores.ImportadorApple;
+import p07_observer.dolarEjemploPpt.observadores.ProfesorDeEconomia;
 
 public class Main {
 

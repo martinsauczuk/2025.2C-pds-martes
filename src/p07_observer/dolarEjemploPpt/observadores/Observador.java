@@ -1,4 +1,4 @@
-package p08_observer.p08_suscriber.dolarEjemploPpt.observadores;
+package p07_observer.dolarEjemploPpt.observadores;
 
 public interface Observador {
 
