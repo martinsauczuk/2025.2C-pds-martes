@@ -1,12 +1,13 @@
-package p08_observer.p08_suscriber.dolarEjemploPpt;
+package p08_observer.p08_suscriber.dolarEjemploPpt.observables;
+
+import p08_observer.p08_suscriber.dolarEjemploPpt.observadores.Observador;
 
 import java.util.HashSet;
 
-public class EntidadBancaria implements Observable {
+public class Banco implements Observable {
 
     private HashSet<Observador> observadores = new HashSet<>();
-    private
-
+    private float precioUsd;
 
     @Override
     public void agregarObservador(Observador observador) {
@@ -21,9 +22,17 @@ public class EntidadBancaria implements Observable {
     @Override
     public void notificar() {
         for (Observador observador : observadores) {
-            observador.actualizar();
+            observador.actualizar(precioUsd);
         }
     }
+
+
+    public void subeElDolar() {
+        precioUsd = precioUsd + 15f;
+        notificar();
+    }
+
+
 
 
 }

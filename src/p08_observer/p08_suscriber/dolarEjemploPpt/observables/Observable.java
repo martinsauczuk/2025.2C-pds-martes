@@ -1,4 +1,6 @@
-package p08_observer.p08_suscriber.dolarEjemploPpt;
+package p08_observer.p08_suscriber.dolarEjemploPpt.observables;
+
+import p08_observer.p08_suscriber.dolarEjemploPpt.observadores.Observador;
 
 public interface Observable {
 
