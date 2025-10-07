@@ -10,9 +10,9 @@ import java.util.stream.Collectors;
  */
 public class DogRun {
 
-    private HashSet<Corredor> corredores;
+    private HashSet<CorredorConPerro> corredores = new HashSet<>();
 
-    public void incribir(Corredor unCorredor) {
+    public void incribir(CorredorConPerro unCorredor) {
         this.corredores.add(unCorredor);
     }
 

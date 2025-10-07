@@ -1,4 +1,4 @@
-package solid.LSP.rectangulo.refactor;
+package solid.LSP.rectangulo.refactorConInterfaces;
 
 
 public class Main {
