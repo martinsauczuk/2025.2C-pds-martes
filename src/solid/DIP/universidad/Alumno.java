@@ -1,9 +1,8 @@
 package solid.DIP.universidad;
 
 
-import universidad.notificaciones.Observador;
 
-public class Alumno implements solid.DIP.universidad.alumnos.Alumno, Observador {
+public class Alumno {
 
     private final String nombre;
     private final String apellido;
@@ -28,22 +27,18 @@ public class Alumno implements solid.DIP.universidad.alumnos.Alumno, Observador 
         this.nacionalidad = nacionalidad;
     }
 
-    @Override
     public String nombre() {
         return nombre;
     }
 
-    @Override
     public String apellido() {
         return apellido;
     }
 
-    @Override
     public String legajo() {
         return legajo;
     }
 
-    @Override
     public void actualizar(String mensaje) {
         System.out.println("Hacer algo con el mensaje");
     }

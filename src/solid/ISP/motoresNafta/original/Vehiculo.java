@@ -6,7 +6,7 @@ public interface Vehiculo {
 
     void frenar();
 
-    void cuantaNaftaTeQueda();
+    int cuantaNaftaTeQueda();
 
     void cargarTanque();
 
