@@ -8,7 +8,7 @@ public interface PlataformaDeViajes {
      * @param unPasajero
      * @param km
      */
-    public void pedirViajePara(Pasajero unPasajero, int km) throws UbertException;
+    public void pedirViajePara(Pasajero unPasajero, int km) throws PlataformaViajesException;
 
 
     /**
@@ -16,18 +16,19 @@ public interface PlataformaDeViajes {
      * Una vez tomado el viaje, el mismo debe pasar a estado INICIADO
      * @param conductor
      * @param idViaje
-     * @throws UbertException
+     * @throws PlataformaViajesException
      */
-    public void tomarViajeConId(Conductor conductor, String idViaje) throws UbertException;
+    public void tomarViajeConId(Conductor conductor, String idViaje) throws PlataformaViajesException;
+
 
 
     /**
      * Finalilzar
      * @param conductor
      * @param idViaje
-     * @throws UbertException
+     * @throws PlataformaViajesException
      */
-    public  void finalizarViaje(Conductor conductor, String idViaje) throws UbertException;
+    public  void finalizarViaje(Conductor conductor, String idViaje) throws PlataformaViajesException;
 
 
 }

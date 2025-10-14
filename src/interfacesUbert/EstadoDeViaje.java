@@ -3,7 +3,7 @@ package interfacesUbert;
 public enum EstadoDeViaje {
 
     PENDIENTE,
-    INICIADOO,
+    INICIADO,
     FINALIZADO,
     CANCELADO
 
