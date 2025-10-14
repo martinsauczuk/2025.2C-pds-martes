@@ -1,4 +1,4 @@
-package interfacesUbert;
+package interfacesUbert.notificaciones;
 
 public interface Solicitud {
 

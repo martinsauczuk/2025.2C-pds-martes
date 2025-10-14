@@ -1,4 +1,7 @@
-package interfacesUbert;
+package interfacesUbert.viajes;
+
+import interfacesUbert.conductores.Conductor;
+import interfacesUbert.pasajeros.Pasajero;
 
 public interface Viaje {
 
@@ -9,6 +12,8 @@ public interface Viaje {
     void finalizarViaje();
 
     String getId();
+
+    int getDistancia();
 
     EstadoDeViaje estadoDeViaje();
 

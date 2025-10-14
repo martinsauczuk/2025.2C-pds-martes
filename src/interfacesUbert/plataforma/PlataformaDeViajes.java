@@ -1,10 +1,15 @@
-package interfacesUbert;
+package interfacesUbert.plataforma;
 
+
+import interfacesUbert.conductores.Conductor;
+import interfacesUbert.pasajeros.Pasajero;
 
 public interface PlataformaDeViajes {
 
     /**
-     * Solicitar un viaje para el pasajero
+     * Solicitar un viaje para el pasajero.
+     * Se debe generar un viaje en estado PENDIENTE
+     * sin conductor asignado.
      * @param unPasajero
      * @param km
      */
@@ -28,7 +33,7 @@ public interface PlataformaDeViajes {
      * @param idViaje
      * @throws PlataformaViajesException
      */
-    public  void finalizarViaje(Conductor conductor, String idViaje) throws PlataformaViajesException;
+    public void finalizarViaje(Conductor conductor, String idViaje) throws PlataformaViajesException;
 
 
 }

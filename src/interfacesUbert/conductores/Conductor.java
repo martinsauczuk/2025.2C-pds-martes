@@ -1,4 +1,4 @@
-package interfacesUbert;
+package interfacesUbert.conductores;
 
 public interface Conductor {
 

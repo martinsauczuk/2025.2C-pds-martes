@@ -1,4 +1,4 @@
-package interfacesUbert;
+package interfacesUbert.viajes;
 
 public enum EstadoDeViaje {
 
