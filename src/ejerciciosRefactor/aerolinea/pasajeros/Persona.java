@@ -1,11 +1,11 @@
-package ejerciciosRefactor.aerolinea;
+package ejerciciosRefactor.aerolinea.pasajeros;
 
-public class Pasajero {
+public class Persona implements Pasajero {
 
     private final int edad;
     private final String nombre;
 
-    public Pasajero(String nombre, int edad) {
+    public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
     }

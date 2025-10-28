@@ -1,27 +1,31 @@
-package ejerciciosRefactor.aerolinea;
+package ejerciciosRefactor.aerolinea.tickets;
 
-public class TicketAereo {
+import ejerciciosRefactor.aerolinea.pasajeros.Pasajero;
+
+public class TicketAereo implements Ticket{
 
     private Pasajero pasajero;
     private final int precio;
     private final String origen;
     private final String destino;
 
-    public TicketAereo(String origin, String destino, Pasajero pasajero) {
-        this.origen = origin;
+    public TicketAereo(String origen, String destino, Pasajero pasajero, int precio) {
+        this.origen = origen;
         this.destino = destino;
-        // Menores de 18 abonan la mitad
-        this.precio = pasajero.getEdad() > 18 ? 400 : 200;
+        this.precio = precio;
     }
 
+    @Override
     public int getPrecio() {
         return precio;
     }
 
+    @Override
     public String getDestino() {
         return destino;
     }
 
+    @Override
     public String getOrigen() {
         return origen;
     }
